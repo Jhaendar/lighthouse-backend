@@ -1,0 +1,20 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lighthouse-backend"
+version = "0.1.0"
+description = "API Backend of Lighthouse "
+authors = [
+    { name = "Jake Avila", email = "jmavila18.work+lighthouse@gmail.com" },
+]
+license = "MIT" # Specify your license
+readme = "README.md" # Optional, if you have a README file
+dependencies = [
+    "flask", # List your package dependencies here
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
